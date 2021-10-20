@@ -1,0 +1,8 @@
+isL = input("Su unidad de solucion esta en litros? y/n: ")
+solucion = float(input("Digite su solucion: "))
+if (isL == "n" or isL == "N"): solucion = ((solucion * 1)/1000)
+gSoluto = float(input("Digite sus gramos de soluto: "))
+PM = float(input("Digite su peso molecular: "))
+n = (gSoluto/PM)
+N = (n/solucion)
+print("La molaridad es: ",N," N")
